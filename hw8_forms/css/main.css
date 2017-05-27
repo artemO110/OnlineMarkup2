@@ -1,0 +1,197 @@
+.box{
+	width: 900px;
+	height: 800px;
+	margin: 0 auto;
+	background:  url(../img/bg.gif) 0 0 repeat;
+}
+
+
+.btn{
+	padding: 277px  63px 58px;
+
+}
+.btn-about_as,
+.btn-portfolio,
+.btn-contact,
+.btn-search{
+	display: inline-block;
+	padding: 20px 45px;
+	color: #fff;
+	outline: 2px dashed rgba(255,255,255,0.8); 
+	outline-offset: -10px; 
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.btn-about_as{
+	background-color: #b10d52;
+	box-shadow: 2px 4px 0 #c4497d;
+	margin-right: 47px;
+}
+.btn-portfolio{
+	background-color: #f7941d;
+	box-shadow: 2px 4px 0 #f9ae55;
+	margin-right: 47px;
+}
+.btn-contact{
+	background-color: #889922;
+	box-shadow: 2px 4px 0 #a5b259;
+}
+#search{
+	width: 453px;
+	height: 35px;
+	margin-left: 63px;
+	outline: 2px dashed rgba(255,255,255,0.8); 
+	outline-offset: -7px; 
+	border: 15px solid #cccccc; 
+	font-size: 40px; 
+	font-family: Tahoma; 
+	border-radius: 3px; 
+	
+	background: #ffffff !important;
+
+}
+#search[placeholder]{
+	text-shadow: 0.5px 0.5px 2px #8e9e2f;
+    color: #8e9e2f;
+    font: 25px/27px American Typewriter, sans-serif;
+    padding-left: 21px;
+}
+.btn-search{
+	background-color: #ef512a;
+	box-shadow: 2px 4px 0 #953219;
+	margin-left: 47px;
+}
+.row{
+      text-align: center;
+      padding-top: 60px;
+  }
+[type|="radio"],
+[type|="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+[for|="radio"]{
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    text-indent: -9999px;
+    border-radius: 50%;
+    margin-right: 25px;
+    background: url("../img/radio.png");
+    box-shadow: 0 0 8px rgba(0, 0, 3, 3), 1px 1px #767676;
+}
+[for|="radio"]:before {
+    content: "";
+    position: absolute;
+    right: 10.5px;
+    top:11px;
+    width: 14px;
+    height: 14px;
+    background: #ef512a;
+    box-shadow: 0 0 3px rgba(0, 0, 3, 3), 1px 1px #bc3f20;
+    border-radius: 50%;
+    opacity: 0;
+}
+[type|="radio"]:checked+[for|="radio"]:before{
+    opacity: 1;
+}
+[for|="checkbox"]{
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 42px;
+    text-indent: -9999px;
+    margin-right: 24px;
+    background: url("../img/chekbox_border.png");
+    box-shadow: 0 0 8px rgba(0, 0, 3, 3), 1px 1px #767676;
+}
+label[for="checkbox-2"]{
+    margin-right: 26px;
+}
+[for|="checkbox"]:hover,
+[for|="radio"]:hover,
+[class|="btn"]{
+    cursor:pointer;
+}
+[for|="checkbox"]:before {
+    position: absolute;
+    content: "";
+    right: -3.5px;
+    top:-1px;
+    width: 37px;
+    height: 37px;
+    background: url("../img/checkedchb.png");
+    opacity: 0;
+}
+[type|="checkbox"]:checked+[for|="checkbox"]:before{
+    opacity: 1;
+}
+[class|="former"]{
+
+    position: relative;
+    display: inline-block;
+    width: 497px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #889922;
+    text-shadow: 0.5px 0.5px 2px #000;
+    border-style: solid;
+    border-width: 12px 13px 12px 11px;
+    -moz-border-image:    url(../img/select_form.jpg) 12 13 12 11;
+    -webkit-border-image: url(../img/select_form.jpg) 12 13 12 11;
+    -o-border-image:      url(../img/select_form.jpg) 12 13 12 11;
+    border-image:         url(../img/select_form.jpg) 12 13 12 11 fill;
+
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 3, 3), 2px 3px #767676;
+    -moz-box-shadow:    0 0 7px rgba(0, 0, 3, 3), 2px 3px #767676;
+    -o-box-shadow:      0 0 7px rgba(0, 0, 3, 3), 2px 3px #767676;
+    box-shadow:         0 0 7px rgba(0, 0, 3, 3), 2px 3px #767676;
+    margin-bottom: -35px;
+}
+.s-conteiner select{
+	
+   background: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    text-transform: uppercase;
+    padding-left: 6px;
+     text-shadow: 0.5px 0.5px 2px #000;
+     color: #8e9e2f;
+     font: 25px/27px American Typewriter, sans-serif;
+    border:none;
+}
+[for|="select"]:after{
+    display: block;
+    width: 50px;
+    height: 40px;
+    border-width: 1px;
+    border-color: transparent;
+    content: "";
+    position: absolute;
+    top:0px;
+    right:-3px;
+    background: #c6c6c6 url("../img/rovs.png") 14px 50% no-repeat;
+    z-index: 3;
+    pointer-events: none;
+}
+.s-conteiner{
+    width: 474px;
+    height: 38px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #f1f0f0;
+    -webkit-box-shadow: inset 2px 2px 5px 0 rgba(0,0,0,0.52);
+    -moz-box-shadow:    inset 2px 2px 5px 0 rgba(0,0,0,0.52);
+    -o-box-shadow:      inset 2px 2px 5px 0 rgba(0,0,0,0.52);
+    box-shadow:         inset 2px 2px 5px 0 rgba(0,0,0,0.52);
+}
+
+.former-select select:focus,.s-conteiner:focus{
+    outline: none;
+}
+.former-select select:hover,.s-conteiner:hover{
+    cursor: pointer;
+}
